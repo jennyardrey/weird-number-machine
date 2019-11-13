@@ -1,4 +1,4 @@
-#Weird Number Machine
+##Weird Number Machine
 
 I am building a program that will find if a number is 'weird'. In number theory, a number is weird when all of its proper divisors (including 1 but not itself) add up to more than the number itself, **AND** no subset of the numbers add up to the number exactly. This is known as being abundent but not semiperfect.
 
@@ -8,6 +8,8 @@ On the other hand, 12 is abundant (the sum of its proper divisors add up to grea
 When i have finished the user will be able to use the Weird Number Machine via a web app.
 
 To-do:
-
-- Combine my functions to create a program that takes one number and returns a boolean
+- write a function to create array of proper divisors of any given number - completed
+- write a function to add up numbers in an array and compare the sum to a given number to see if it is greater - completed
+- write a function to see if any combination of the array can add up exactly to the number - completed
+- Combine my functions to create a program that takes one number and returns a boolean depending on if it is weird - completed
 - make a front end UI that would allow someone to input a number and get a result
