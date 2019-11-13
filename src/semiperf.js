@@ -10,11 +10,11 @@ const semiperf = function(arr, num) {
         return a + b;
       });
       if (sum2 === num) {
-        return true;
+        return false;
       }
     }
   }
-  return false;
+  return true;
 };
 
 module.exports = semiperf;

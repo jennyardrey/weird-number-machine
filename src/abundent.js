@@ -1,13 +1,12 @@
 //this function returns true is num is an abundent number
-const abundent = function(output, num) {
+const abundent = function(output, value) {
   let sum = output.reduce(function(acc, val) {
     return acc + val;
   }, 0);
-
-  if (sum > num) {
-    return true;
+  if (sum >= value) {
+    return "abundent";
   } else {
-    return false;
+    return "not abundent";
   }
 };
 

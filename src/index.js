@@ -2,7 +2,7 @@
 const div = function(num) {
   let output = [1];
   for (let i = num; i > 1; i--) {
-    if (num % i === 0) {
+    if (num % i === 0 && i !== num) {
       output.push(i);
     }
   }

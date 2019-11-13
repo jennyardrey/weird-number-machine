@@ -1,10 +1,11 @@
 const div = require("../src/index.js");
 const abundent = require("../src/abundent.js");
 const semiperf = require("../src/semiperf.js");
+const weird = require("../src/weird.js");
 
 describe("divisors", () => {
   it("returns an array of the numbers proper divisors", () => {
-    expect(div(70)).toEqual([1, 70, 35, 14, 10, 7, 5, 2]);
+    expect(div(70)).toEqual([1, 35, 14, 10, 7, 5, 2]);
   });
 });
 
@@ -20,12 +21,22 @@ describe("abundent number", () => {
 });
 
 describe("semiperfect", () => {
-  it("returns true if the number is semiperfect", () => {
+  it("returns false if the number is semiperfect", () => {
     const divs = [1, 2, 5, 7, 10, 14, 35];
     const targ = 70;
     const divs2 = [1, 2, 3, 4, 6];
     const targ2 = 12;
-    expect(semiperf(divs, targ)).toBeFalsy();
-    expect(semiperf(divs2, targ2)).toBeTruthy();
+    expect(semiperf(divs, targ)).toBeTruthy();
+    expect(semiperf(divs2, targ2)).toBeFalsy();
+  });
+});
+
+describe("weird number", () => {
+  it("returns true if the number is weird", () => {
+    expect(weird(70)).toBeTruthy();
+    expect(weird(836)).toBeTruthy();
+    expect(weird(150)).toBeFalsy();
+    expect(weird(4030)).toBeTruthy();
+    expect(weird(5500)).toBeFalsy();
   });
 });
