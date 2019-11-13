@@ -1,0 +1,22 @@
+{
+  "name": "weird-number-machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennyardrey/weird-number-machine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennyardrey/weird-number-machine/issues"
+  },
+  "homepage": "https://github.com/jennyardrey/weird-number-machine#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
