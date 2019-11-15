@@ -1,7 +1,9 @@
-const div = require("../src/index.js");
+/* const div = require("../src/index.js");
 const abundent = require("../src/abundent.js");
 const semiperf = require("../src/semiperf.js");
-const weird = require("../src/weird.js");
+const weird = require("../src/weird.js"); */
+
+const { div, abundent, semiperf, weird } = require("../src/weirdNum.js");
 
 describe("divisors", () => {
   it("returns an array of the numbers proper divisors", () => {
@@ -36,6 +38,7 @@ describe("weird number", () => {
     expect(weird(70)).toBeTruthy();
     expect(weird(836)).toBeTruthy();
     expect(weird(150)).toBeFalsy();
+    expect(weird(1)).toBeFalsy();
     expect(weird(4030)).toBeTruthy();
     expect(weird(5500)).toBeFalsy();
   });
