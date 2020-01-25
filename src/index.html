@@ -4,23 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Weird Number Machine</title>
-    <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css" /> -->
+    <link rel="stylesheet" href="index.css" type="text/css" />
   </head>
   <body>
-    <input type="number" id="wni" placeholder="type number here" />
-    <input
+		<div class="inputs">
+    <input class="item" type="number" id="wni" placeholder="type number here" />
+		<input
+		class="item"
       type="button"
       id="get-num"
       value="Is it weird?"
       onclick="weird(document.getElementById('wni').value)"
     />
-    <input
+		<input
+		class="item"
       type="button"
       id="reset"
       value="reset"
       onclick="window.location.reload();"
     />
-    <h1 id="isit"></h1>
+		<h1 id="isit"></h1>
+	</div>
     <!-- <script type="text/javascript" src="../src/weird.js"></script> -->
     <!-- <script
       type="text/javascript"
