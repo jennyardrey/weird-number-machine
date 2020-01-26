@@ -4,30 +4,40 @@ body {
 }
 #wni {
 	background-color: white;
-    border: 1px solid black;
-    width: 150px;
-		height: 40px;
-		color: black;
-		font-size: 15px;
-		text-align: center;
-		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: 1px solid black;
+  width: 150px;
+ 	height: 40px;
+	color: black;
+	font-size: 13px;
+	text-align: center;
+	font-family: 'Bungee Hairline';
 
 }
 
 .inputs {
 	height: 75vh;
 	width: 75 vw;
-display: grid;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
 
 }
 .item {
 	 margin: 20px;
+ }
+
+ #itIs {
+	font-family: 'Bungee Hairline';
+  display: none;
+ } 
+
+ #itIsnt {
+	font-family: 'Bungee Hairline';
+  display: none;
  }
 

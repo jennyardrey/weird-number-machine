@@ -48,17 +48,21 @@ semiperf = function(arr, numb) {
 };
 
 weird = function(num) {
-  let numInt = parseInt(num, 10);
+	let numInt = parseInt(num, 10);
+	let itIs = document.getElementById("itIs");
+	let itIsnt = document.getElementById("itIsnt");
   const divisors = div(num);
   console.log(divisors);
   const abun = abundent(divisors, numInt);
   console.log(abun);
   if (abun === "not abundent") {
-    document.getElementById("isit").innerHTML = "Not a weird number!";
+    itIsnt.style.display = "block";
   } else {
     let result = semiperf(divisors, numInt);
     console.log(result);
     if (result === true)
-      document.getElementById("isit").innerHTML = "Thats weird!";
-  }
+      itIs.style.display = "block";
+  } itIsnt.style.display = "block";
 };
+
+module.exports = { div, abundent, semiperf, weird }
