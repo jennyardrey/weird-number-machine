@@ -1,7 +1,4 @@
-body {
-	margin: auto;
 
-}
 #wni {
 	background-color: white;
   border: 1px solid black;
@@ -11,20 +8,15 @@ body {
 	font-size: 13px;
 	text-align: center;
 	font-family: 'Bungee Hairline';
-
+justify-self: center;
 }
 
 .inputs {
 	height: 75vh;
-	width: 75 vw;
+	width: 75vw;
   display: grid;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px;
+margin: 0 auto 0 auto;
+
 
 }
 .item {
@@ -41,3 +33,12 @@ body {
   display: none;
  }
 
+.button {
+	font-family: 'Bungee Hairline';
+
+}
+
+#reset {
+	font-family: 'Bungee Hairline';
+
+}
