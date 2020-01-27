@@ -1,4 +1,9 @@
-
+.inputs {
+	height: 75vh;
+	width: 75vw;
+  display: grid;
+  margin: 0 auto 0 auto;
+}
 #wni {
 	background-color: white;
   border: 1px solid black;
@@ -8,29 +13,24 @@
 	font-size: 13px;
 	text-align: center;
 	font-family: 'Bungee Hairline';
-justify-self: center;
+  justify-self: center;
 }
 
-.inputs {
-	height: 75vh;
-	width: 75vw;
-  display: grid;
-margin: 0 auto 0 auto;
 
-
-}
 .item {
 	 margin: 20px;
  }
 
  #itIs {
 	font-family: 'Bungee Hairline';
-  display: none;
+	display: none;
+	justify-self: center;
  } 
 
  #itIsnt {
 	font-family: 'Bungee Hairline';
-  display: none;
+	display: none;
+	justify-self: center;
  }
 
 .button {

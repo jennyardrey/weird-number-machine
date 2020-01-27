@@ -61,7 +61,7 @@ weird = function(num) {
     let result = semiperf(divisors, numInt);
     console.log(result);
     if (result === true)
-      itIs.style.display = "block";
+      return itIs.style.display = "block";
   } itIsnt.style.display = "block";
 };
 
