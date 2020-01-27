@@ -1,3 +1,16 @@
+body {
+	font-family: 'Bungee Hairline';
+
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
 .inputs {
 	height: 75vh;
 	width: 75vw;
@@ -35,8 +48,16 @@
 
 .button {
 	font-family: 'Bungee Hairline';
-
+font-size: 20px;
+border-radius: 28px;
+	text-shadow: 3px 2px 1px #9daef5;
+	box-shadow: 6px 5px 24px #666666;
 }
+
+	.button:hover {
+		background: gray;
+		color: white;
+	}
 
 #reset {
 	font-family: 'Bungee Hairline';

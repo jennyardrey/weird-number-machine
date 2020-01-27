@@ -8,6 +8,11 @@
 		<link href='https://fonts.googleapis.com/css?family=Bungee Hairline' rel='stylesheet'>
   </head>
   <body>
+		<nav>
+			<h1>Weird Number machine</h1>
+			<div>About</div>
+			<div>Other Projects</div>
+		</nav>
 		<div class="inputs">
     <input class="item" type="number" id="wni" placeholder="type number here" />
 		<input
@@ -15,8 +20,10 @@
       type="button"
       id="get-num"
       value="Is it weird?"
-      onclick="weird(document.getElementById('wni').value)"
-    />
+      onclick="weird(document.getElementById('wni').value), changeDisp()"
+		/>
+		<div id="itIs">That's Weird</div>
+		<div id="itIsnt">That's not weird</div>
 		<input
 		class="item button"
       type="button"
@@ -24,14 +31,13 @@
       value="reset"
       onclick="window.location.reload();"
     />
-		<div id="itIs">That's Weird</div>
-		<div id="itIsnt">That's not weird</div>
 	</div>
     <!-- <script type="text/javascript" src="../src/weird.js"></script> -->
     <!-- <script
       type="text/javascript"
       src="http://code.jquery.com/jquery-latest.js"
     ></script> -->
-    <script type="text/javascript" src="weirdNum.js"></script>
+		<script type="text/javascript" src="weirdNum.js"></script>
+		<script type="text/javascript" src="removeButton.js"></script>
   </body>
 </html>
