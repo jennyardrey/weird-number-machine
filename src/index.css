@@ -3,13 +3,7 @@ body {
 
 }
 
-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 
-}
 
 .inputs {
 	height: 75vh;
@@ -18,6 +12,7 @@ nav {
   margin: 0 auto 0 auto;
 }
 #wni {
+	margin-top: 50px;
 	background-color: white;
   border: 1px solid black;
   width: 150px;
@@ -62,4 +57,30 @@ border-radius: 28px;
 #reset {
 	font-family: 'Bungee Hairline';
 
+}
+
+@media only screen and (max-width: 1000px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	
+	}
+	#nav-toggle {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+	#nav-toggle {
+		display: block;
+	}
+	.nav-btns {
+		display: none;
+	}
 }
